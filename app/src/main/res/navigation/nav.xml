@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/sportListFragment">
+
+    <fragment
+        android:id="@+id/sportListFragment"
+        android:name="com.example.sportfacts.presentation.fragments.SportListFragment"
+        android:label="fragment_sport_list"
+        tools:layout="@layout/fragment_sport_list" >
+        <action
+            android:id="@+id/action_sportListFragment_to_webFragment"
+            app:destination="@id/webFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/webFragment"
+        android:name="com.example.sportfacts.presentation.fragments.WebFragment"
+        android:label="fragment_web"
+        tools:layout="@layout/fragment_web" />
+</navigation>
