@@ -3,6 +3,7 @@ package com.example.sportfacts.data.collection
 import com.example.sportfacts.R
 import com.example.sportfacts.data.model.FactModel
 
+
 sealed class CollectionFacts {
     object BaseballFacts {
         val listFact = listOf(
